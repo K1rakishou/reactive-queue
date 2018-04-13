@@ -25,9 +25,13 @@ queue.accept(5)
 queue.accept(6)
 queue.accept(7)
 
+println("queue elements count: ${queue.getValues().size}")
+
 queue.subscribe({
     println("subscriber2: $it")
 })
+
+println("queue elements count: ${queue.getValues().size}")
 ```
 
 Will output:
@@ -36,7 +40,9 @@ Will output:
     subscriber1: 1
     subscriber1: 2
     subscriber1: 3
+    queue elements count: 4
     subscriber2: 4
     subscriber2: 5
     subscriber2: 6
     subscriber2: 7
+    queue elements count: 0
