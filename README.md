@@ -9,7 +9,7 @@ It also removes elements from ArrayList after emitting them.
 
 ### Example
 
-Add some elements in the queue then subscribe and resubscribe
+Add some elements to the queue then subscribe and resubscribe
 
 ```kotlin
 val queue = SingleSubscriberReactiveQueue.create<Int>()
