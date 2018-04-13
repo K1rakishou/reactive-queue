@@ -7,7 +7,7 @@ Unlike the ReplaySubject it remembers accepted items in the internal ArrayList
 when there is no subscriber and emits everything it have remembered to new subscriber.
 It also removes elements from ArrayList after emitting them.
 
-`Example`
+### Example
 
 Add some elements in the queue then subscribe and resubscribe
 
