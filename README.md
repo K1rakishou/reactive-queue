@@ -3,7 +3,7 @@
 Reactive queue behaves like PublishSubject but may contain only one subscriber.
 
 Unlike the PublishSubject it remembers accepted items in the internal ArrayList
-when the subscriber is not set and emits everything when someone subscribes.
+when there is no subscriber and emits everything it have remembered to next subscriber.
 
 # Example
 
